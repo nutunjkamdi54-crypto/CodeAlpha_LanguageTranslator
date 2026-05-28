@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>AI Translator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- JS -->
+    <script defer
+    src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+
+<body>
+
+    <!-- Animated Gradient Background -->
+    <div class="background"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Title -->
+        <h1 class="title">
+            🌍 AI Language Translator
+        </h1>
+
+        <!-- Input Text -->
+        <textarea
+        id="inputText"
+        placeholder="Enter text here..."></textarea>
+
+        <!-- Language Controls -->
+        <div class="controls">
+
+            <!-- Source Language -->
+            <select id="sourceLang">
+
+                <option value="en">English</option>
+
+                <option value="hi">Hindi</option>
+
+                <option value="fr">French</option>
+
+                <option value="es">Spanish</option>
+
+                <option value="de">German</option>
+
+                <option value="ja">Japanese</option>
+
+            </select>
+
+            <!-- Swap Button -->
+            <button id="swapBtn">
+                ⇄
+            </button>
+
+            <!-- Target Language -->
+            <select id="targetLang">
+
+                <option value="hi">Hindi</option>
+
+                <option value="en">English</option>
+
+                <option value="fr">French</option>
+
+                <option value="es">Spanish</option>
+
+                <option value="de">German</option>
+
+                <option value="ja">Japanese</option>
+
+            </select>
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actionButtons">
+
+            <!-- Translate Button -->
+            <button id="translateBtn">
+                Translate
+            </button>
+
+            <!-- Mic Button -->
+            <button id="micBtn">
+                🎤
+            </button>
+
+        </div>
+
+        <!-- Output Text -->
+        <textarea
+        id="outputText"
+        placeholder="Translation..."
+        readonly></textarea>
+
+        <!-- Bottom Buttons -->
+        <div class="bottomButtons">
+
+            <button id="copyBtn">
+                Copy
+            </button>
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particle Configuration -->
+    <script>
+
+        particlesJS("particles-js", {
+
+            particles: {
+
+                number: {
+                    value: 80
+                },
+
+                color: {
+                    value: "#00ffff"
+                },
+
+                shape: {
+                    type: "circle"
+                },
+
+                opacity: {
+                    value: 0.5
+                },
+
+                size: {
+                    value: 3
+                },
+
+                move: {
+                    enable: true,
+                    speed: 2
+                },
+
+                line_linked: {
+
+                    enable: true,
+
+                    distance: 150,
+
+                    color: "#00ffff",
+
+                    opacity: 0.3,
+
+                    width: 1
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

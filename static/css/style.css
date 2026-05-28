@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#0f172a;
+    position:relative;
+}
+
+/* =========================
+   Animated Gradient Background
+========================= */
+
+.background{
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        -45deg,
+        #0f172a,
+        #1e293b,
+        #0ea5e9,
+        #06b6d4
+    );
+
+    background-size:400% 400%;
+
+    animation:gradient 12s ease infinite;
+
+    z-index:-2;
+}
+
+@keyframes gradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* =========================
+   Particles
+========================= */
+
+#particles-js{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+/* =========================
+   Main Container
+========================= */
+
+.container{
+    position:relative;
+
+    width:700px;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(15,23,42,0.60);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.35),
+    0 0 25px rgba(0,255,255,0.08);
+
+    animation:
+    fadeIn 1.2s ease,
+    floating 4s ease-in-out infinite;
+}
+
+/* =========================
+   Fade Animation
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   Floating Animation
+========================= */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* =========================
+   Title
+========================= */
+
+.title{
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:28px;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff;
+}
+
+/* =========================
+   Text Areas
+========================= */
+
+textarea{
+    width:100%;
+
+    height:150px;
+
+    border:none;
+
+    outline:none;
+
+    resize:none;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    font-size:17px;
+
+    margin-top:15px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+
+    transition:0.3s;
+
+    line-height:1.5;
+}
+
+/* Focus Glow */
+
+textarea:focus{
+
+    box-shadow:
+    0 0 10px rgba(0,255,255,0.4),
+    0 0 20px rgba(0,255,255,0.2);
+}
+
+/* Placeholder */
+
+textarea::placeholder{
+    color:#d1d5db;
+}
+
+/* Scrollbar */
+
+textarea::-webkit-scrollbar{
+    width:8px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background:#00ffff;
+    border-radius:10px;
+}
+
+/* =========================
+   Controls
+========================= */
+
+.controls{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+
+    gap:20px;
+}
+
+/* =========================
+   Select + Buttons
+========================= */
+
+select,
+button{
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    padding:12px 20px;
+
+    font-size:16px;
+
+    transition:0.3s;
+}
+
+/* =========================
+   Dropdown
+========================= */
+
+select{
+
+    background:rgba(255,255,255,0.12);
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+
+    cursor:pointer;
+
+    min-width:140px;
+}
+
+option{
+    color:black;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button{
+
+    cursor:pointer;
+
+    background:#06b6d4;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+/* Hover Effects */
+
+button:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.actionButtons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+/* Translate Button */
+
+#translateBtn{
+
+    flex:1;
+
+    font-size:20px;
+
+    padding:15px;
+
+    letter-spacing:1px;
+}
+
+/* Mic Button */
+
+#micBtn{
+
+    width:75px;
+
+    font-size:24px;
+}
+
+/* Listening Animation */
+
+.listening{
+    animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        box-shadow:0 0 5px #00ffff;
+    }
+
+    50%{
+        box-shadow:
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+    }
+
+    100%{
+        box-shadow:0 0 5px #00ffff;
+    }
+}
+
+/* =========================
+   Bottom Buttons
+========================= */
+
+.bottomButtons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:22px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:768px){
+
+    .container{
+        width:92%;
+        padding:25px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    textarea{
+        height:130px;
+    }
+
+    .controls{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    select{
+        width:100%;
+    }
+
+    .actionButtons{
+        flex-direction:column;
+    }
+
+    #micBtn{
+        width:100%;
+    }
+
+    .bottomButtons{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+}
