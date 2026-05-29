@@ -26,11 +26,11 @@ The goal of this project was to explore Python-based applications and understand
 
 ### English to Hindi Translation
 
-![English to Hindi Translation](screenshot/english-to-hindi.png)
+![English to Hindi Translation](Screenshot/english-to-hindi.png)
 
 ### English to French Translation
 
-![English to French Translation](screenshot/english-to-french.png)
+![English to French Translation](Screenshot/english-to-french.png)
 
 ---
 
