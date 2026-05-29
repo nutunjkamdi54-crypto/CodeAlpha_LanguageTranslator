@@ -14,6 +14,21 @@ The goal of this project was to explore Python-based applications and understand
 * Easy to use for beginners
 * Supports a variety of commonly used languages
 
+* ## 📸 Screenshots
+
+### Home Screen
+
+![Home Screen](screenshots/home.png)
+
+### English to Hindi Translation
+
+![English to Hindi Translation](screenshots/english-to-hindi.png)
+
+### English to French Translation
+
+![English to French Translation](screenshots/english-to-french.png)
+
+
 ## Technologies Used
 
 * Python
