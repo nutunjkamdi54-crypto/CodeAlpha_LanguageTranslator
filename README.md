@@ -1,93 +1,65 @@
 # 🌍 AI Language Translator
 
-A modern AI-powered Language Translation Web App built using Flask, HTML, CSS, and JavaScript.
+## About the Project
 
-## 🚀 Features
+This project was developed as part of my CodeAlpha Internship. The AI Language Translator helps users translate text from one language to another quickly and easily through a simple and user-friendly interface.
 
-* 🌐 Translate text between multiple languages
-* 🎤 Voice Input using Speech Recognition
-* 🔊 Text-to-Speech support
-* ✨ Modern Glassmorphism UI
-* 🌌 Animated Particle Background
-* 📋 Copy Translation Feature
-* 🔄 Swap Languages
-* 📱 Fully Responsive Design
-* ⚡ Smooth Animations & Hover Effects
+The goal of this project was to explore Python-based applications and understand how language translation tools work using available translation libraries.
 
----
+## Features
 
-## 🛠️ Technologies Used
+* Translate text between multiple languages
+* Simple and clean user interface
+* Fast translation results
+* Easy to use for beginners
+* Supports a variety of commonly used languages
+
+## Technologies Used
 
 * Python
-* Flask
-* HTML5
-* CSS3
-* JavaScript
-* Deep Translator API
-* Particles.js
+* Tkinter
+* Deep Translator Library
 
----
+## How to Run the Project
 
-## 📂 Project Structure
+1. Download or clone this repository.
+2. Install the required package:
 
 ```bash
-CodeAlpha_LanguageTranslator
-│
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── assets/
-│
-├── templates/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+pip install deep-translator
 ```
 
----
-
-## ▶️ How to Run
-
-### 1️⃣ Clone Repository
+3. Run the application:
 
 ```bash
-git clone https://github.com/your-username/CodeAlpha_LanguageTranslator.git
+python main.py
 ```
 
-### 2️⃣ Install Dependencies
+4. Enter your text, select the source and target languages, and click the translate button.
 
-```bash
-pip install -r requirements.txt
-```
+## What I Learned
 
-### 3️⃣ Run Application
+While building this project, I learned:
 
-```bash
-python app.py
-```
+* Python GUI development using Tkinter
+* Working with translation APIs and libraries
+* Handling user input and displaying output
+* Improving application design and usability
 
-### 4️⃣ Open Browser
+## Future Improvements
 
-```bash
-http://127.0.0.1:5000
-```
+* Voice-to-text translation
+* Text-to-speech support
+* Dark mode interface
+* Translation history
+* Support for more languages
 
----
+## Author
 
-## 📸 Project Preview
+**Nutunj Kamdi**
 
-Add your screenshots inside the `screenshots/` folder.
+This project was created as part of the CodeAlpha Internship Program.
 
----
+## GitHub Repository
 
-## 🎯 Internship Task
-
-This project was developed as part of the CodeAlpha Artificial Intelligence Internship.
-
----
-
-## 👨‍💻 Developer
-
-Developed by [Your Name]
+https://github.com/nutunjkamdi54-crypto/CodeAlpha_LanguageTranslator
