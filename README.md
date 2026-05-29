@@ -22,15 +22,15 @@ The goal of this project was to explore Python-based applications and understand
 
 ### Home Screen
 
-![Home Screen](screenshots/home.png)
+![Home Screen](Screenshot/home.png)
 
 ### English to Hindi Translation
 
-![English to Hindi Translation](screenshots/english-to-hindi.png)
+![English to Hindi Translation](screenshot/english-to-hindi.png)
 
 ### English to French Translation
 
-![English to French Translation](screenshots/english-to-french.png)
+![English to French Translation](screenshot/english-to-french.png)
 
 ---
 
